@@ -1,32 +1,107 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name]'s Website</title>
+    <title>Alexander Marin | Personal Website</title>
     <style>
-      body { font-family: Arial, sans-serif; max-width: 800px;
-             margin: 0 auto; padding: 20px; background: #f5f5f5; }
-      h1   { color: #1F4E79; }
-      h2   { color: #2E75B6; border-bottom: 2px solid #2E75B6; }
-      p    { line-height: 1.6; }
+      :root {
+        --primary-color: #1F4E79;
+        --secondary-color: #2E75B6;
+        --bg-color: #f8f9fa;
+        --card-bg: #ffffff;
+        --text-color: #333333;
+      }
+      
+      body { 
+        font-family: 'Segoe UI', Arial, sans-serif; 
+        max-width: 700px;
+        margin: 0 auto; 
+        padding: 40px 20px; 
+        background: var(--bg-color); 
+        color: var(--text-color);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      
+      h1 { 
+        color: var(--primary-color); 
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+      }
+      
+      h2 { 
+        color: var(--secondary-color); 
+        font-size: 1.3rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .card {
+        background: var(--card-bg);
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      
+      p { 
+        line-height: 1.7; 
+        margin: 0 0 15px 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      .btn-link {
+        display: inline-block;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.2s ease;
+      }
+
+      .btn-link:hover {
+        background: var(--secondary-color);
+      }
     </style>
   </head>
   <body>
-    <h1>Hi, I'm Alexander Marin!</h1>
+
+    <header>
+      <h1>Hi, I'm Alexander Marin!</h1>
+    </header>
  
-    <h2>About Me</h2>
-    <p>[Write 2-3 sentences about yourself here.]</p>
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Provide a 2-3 sentence overview of who you are, your current professional role or student status, and what drives your work.</p>
+    </section>
  
-    <h2>My Interests</h2>
-    <p>[What do you enjoy? List a few things.]</p>
+    <section class="card">
+      <h2>My Interests</h2>
+      <p>Highlight your core professional interests, technologies you enjoy working with, or hobbies outside of coding.</p>
+    </section>
  
-    <h2>My Goals for This Course</h2>
-    <p>[What do you want to build or learn?]</p>
+    <section class="card">
+      <h2>My Goals for This Course</h2>
+      <p>Detail the exact skill sets you want to acquire or specific applications you intend to develop throughout this curriculum.</p>
+    </section>
  
-    <h2>My GitHub</h2>
-    <p>Check out my projects: 
-      <a href="https://github.com/AlexanderMarin-Dev">Github link</a>
-    </p>
+    <section class="card" style="text-align: center;">
+      <h2>My GitHub</h2>
+      <p>Explore my source code, repositories, and recent development projects directly on my profile.</p>
+      <a class="btn-link" href="https://github.com/AlexanderMarin-Dev" target="_blank">View GitHub Profile</a>
+    </section>
+
   </body>
 </html>
+
